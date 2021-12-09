@@ -2,6 +2,9 @@ let main = document.querySelector('main');
 
 
 function createGrid(lineLength){
+    let h3= document.createElement('h3');
+    h3.textContent = `${lineLength}x ${lineLength}`;
+    main.appendChild(h3);
     let pixelGrid = document.createElement('div');
     pixelGrid.classList.add('pixel-grid');
     pixelGrid.style.cssText = `grid-template-rows: repeat(${lineLength},1fr); grid-template-columns: repeat(${lineLength},1fr);`;
@@ -29,6 +32,8 @@ let resetButton = document.querySelector("#reset");
 
 resetButton.addEventListener('click',()=>{
     let pixelGrid = document.querySelector('.pixel-grid');
+    let h3 = document.querySelector('h3');
+    h3.remove();
     pixelGrid.remove();
     let lineLength = false;
     while(!lineLength || lineLength > 100 || lineLength < 0 || !(Number.isInteger(lineLength))) {
