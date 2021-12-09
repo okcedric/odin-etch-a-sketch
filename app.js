@@ -8,3 +8,12 @@ for(let i = 0; i< (lineLength*lineLength); i++){
     pixelGrid.appendChild(pixel);
 }
 
+
+let pixels = document.querySelectorAll('.pixel');
+
+pixels.forEach(pixel => {
+    console.log('hey');
+    pixel.addEventListener('mouseover', () =>{
+        pixel.style.cssText = " background-color: tomato;" 
+    })
+})
