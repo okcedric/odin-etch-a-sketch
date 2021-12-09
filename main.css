@@ -8,7 +8,15 @@ body{
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+
+}
+
+header{
+    align-items: center;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
 
 }
 main{
@@ -18,21 +26,31 @@ main{
     justify-content: center;
 }
 .pixel {
-   height: 1fr;
-   width: 1fr;
+   height: 100%;
+   width: 100%;
     background-color: antiquewhite;
 }
 
-.container{
-    max-width: 1440px;
+.pixel-grid{
+    display: grid;
+    gap: 1px;
+    height: 80vh;
     margin: 4rem 1rem;
-    height: 100%;
+    max-width: 1440px;
     width: 80VH;
 }
 
-#pixel-grid{
-    display: grid;
-    gap: 5px;
-   
-    height: 80vh;
+button{
+    background-color: #333;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-size: 1.272rem;
+    padding: .5rem 1rem ;
+    border: 1px solid #333;
+}
+
+button:hover{
+    background-color: antiquewhite;
+    color: #333;
+
 }
