@@ -3,7 +3,7 @@ let main = document.querySelector('main');
 
 function createGrid(lineLength){
     let h3= document.createElement('h3');
-    h3.textContent = `${lineLength}x ${lineLength}`;
+    h3.textContent = `${lineLength} x ${lineLength}`;
     main.appendChild(h3);
     let pixelGrid = document.createElement('div');
     pixelGrid.classList.add('pixel-grid');
