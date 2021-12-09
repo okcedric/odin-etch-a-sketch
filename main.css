@@ -52,6 +52,7 @@ button{
     font-size: 1.272rem;
     padding: .5rem 1rem ;
     border: 1px solid #333;
+    font-weight: bold;
 }
 
 button:hover{
